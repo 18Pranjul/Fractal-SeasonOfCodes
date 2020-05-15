@@ -1,0 +1,316 @@
+{% load static %}
+<!DOCTYPE html>
+<tml lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="icon-font.css"> -->
+        <link rel="stylesheet" href="{% static "css/styles1.css" %}">
+
+    </head>
+    <body>
+
+        <div class="side__name">
+            <h2 class="side__name-h4">S&nbsp;e&nbsp;a&nbsp;s&nbsp;o&nbsp;n&nbsp;&nbsp;&nbsp;o&nbsp;f&nbsp;&nbsp;&nbsp;C&nbsp;o&nbsp;d&nbsp;e&nbsp;s</h2>
+        </div>
+
+
+            <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">
+                &nbsp;
+            </div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">About SOC</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">About Fractal</a></li>
+                    {% if user.is_authenticated %}
+                    <li class="navigation__item" id="#login"><a href="{% url 'user_logout' %}" class="navigation__link">Logout</a></li>
+                    {% else %}
+                    <li class="navigation__item" id="#login"><a href="#popup" class="navigation__link">Login/Register</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+
+        </div>
+
+                <header class="header">
+                    <!-- <div class="logo-box">
+                        <img src="pic3.png" alt="Logo" class="logo">
+                    </div> -->
+                    <div class="bg-video">
+                        <video class="bg-video__content" autoplay muted loop>
+                            <source src="{% static "videos/vedio5.mp4" %}" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="text-box">
+                         <h1 class="primary-heading">
+                             <span class="primary-heading-main">Season Of Code</span>
+                             <span class="primary-heading-sub">perfect place to find your coding space</span>
+                        </h1>
+                    </div>
+                </header>
+
+</main>
+            <!-- <div class="slide-wrapper">
+                <div class="slide-text">
+                  <div class="slide-heading">Dark Side</div>
+                    <h2 class="slideshow-title"> That's—that's a granite peak. It's not volcanic!</h2>
+                    <div class="slide-body">
+                      <p>The Takara Mountains, known originally by the native Keshiri species as the Cetajan Mountains, were a mountain range on the remote Wild Space planet of Kesh. In 5000 BBY, during the Great Hyperspace War, a Sith starship, the Omen, crash-landed in these mountains. The survivors of the crash were stranded on the planet and eventually formed the Lost Tribe of Sith. They built a Sith Temple in the mountains, over and around the crash site of the Omen.</p>
+                      <p><a href="#" class="button">Read More</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>    -->
+        <!-- <section class="available">
+                  <div class="row">
+                      <div class="col-1-of-3">
+                           <h2 class="head-h2">
+                               The coding platform
+                           </h2>
+                           <p>The Takara Mountains, known originally by the native Keshiri species as the Cetajan Mountains, were a mountain range on the remote Wild Space planet of Kesh. In 5000 BBY, during the Great Hyperspace War, a Sith starship, the Omen, crash-landed in these mountains. The survivors of the crash were stranded on the planet and eventually formed the Lost Tribe of Sith. They built a Sith Temple in the mountains, over and around the crash site of the Omen.</p>
+                      </div>
+                      <div class="col-1-of-3">
+                          <img src="" alt="">
+                      </div>
+                  </div>
+        </section>    -->
+        <section class="section-tours">
+            <div class="u-center-text u-margin-bottom-big" style="text-align: center;">
+                <h2 class="jello">
+                    LET's Get Started
+                </h2>
+            </div>
+            <div class="row">
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card__side card__side--front ">
+                                <div class="card__picture card__picture-1">
+                                    &nbsp;
+                                </div>
+
+                                <h4 class="card-heading">
+                                    <span class="card__heading-span card__heading-span-1">The Coding Platform</span>
+                                </h4>
+                                <div class="card-details">
+                                    <ul>
+                                        <li>options</li>
+                                        <li>food</li>
+                                        <li>menu</li>
+                                        <li>deands</li>
+                                        <li>experts</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-1">
+                                <div class="card__cta">
+
+                                    <a href="#" class="btn btn-white">Coming Soon </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card__side card__side--front ">
+                                <div class="card__picture card__picture-2">
+                                    &nbsp;
+                                </div>
+
+                                <h4 class="card-heading">
+                                     <span class="card__heading-span card__heading-span-1">The Developing Platform</span>
+                                </h4>
+                                <div class="card-details">
+                                    <ul>
+                                        <li>options</li>
+                                        <li>food</li>
+                                        <li>menu</li>
+                                        <li>demands</li>
+                                        <li>experts</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-1">
+                                <div class="card__cta">
+
+                                    <a href="{% url 'seasons' %}" class="btn btn-white">Peak In </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                </div>
+                <div class="login-wrap">
+                    <div class="login-html">
+                      <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+                      <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                      <div class="login-form">
+                      <form action="{% url 'user_login' %}" method="POST">
+                        {% csrf_token %}
+                        <div class="sign-in-htm">
+                          <div class="group">
+                            <label for="user" class="label">Username</label>
+                            <input id="user" type="text" class="input" name="username">
+                          </div>
+                          <div class="group">
+                            <label for="pass" class="label">Password</label>
+                            <input id="pass" type="password" class="input" data-type="password" name="password">
+                          </div>
+                          <div class="group">
+                            <input id="check" type="checkbox" class="check" checked>
+                            <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                          </div>
+                          <div class="group">
+                            <input type="submit" class="button" value="Sign In">
+                          </div>
+                          <div class="hr"></div>
+                          <div class="foot-lnk">
+                            <a href="#forgot">Forgot Password?</a>
+                          </div>
+                        </div>
+                      </form>
+                      {% if registered %}
+                        <h3>Registeration successful. Go to <a href="{% url 'user_login' %}">Login Page</a> to login.</h3>
+                      {% else %}
+                        <form action="{% url 'register' %}" method="POST">
+                          {% csrf_token %}
+                        <div class="sign-up-htm">
+                          <div class="group">
+                            <label for="pass" class="label">First Name</label>
+                            {{user_form.first_name}}
+                          </div>
+                          <div class="group">
+                            <label for="pass" class="label">Last Name</label>
+                            {{user_form.last_name}}
+                          </div>
+                          <div class="group">
+                            <label for="pass" class="label">Email Address</label>
+                            {{user_form.email}}
+                          </div>
+                          <div class="group">
+                            <label for="user" class="label">Username</label>
+                            {{user_form.username}}
+                          </div>
+                          <div class="group">
+                            <label for="pass" class="label">Password</label>
+                            {{user_form.password}}
+                          </div>
+
+                          <div class="group">
+                            <input type="submit" class="button" value="Sign Up">
+                          </div>
+                          <div class="hr"></div>
+                          <div class="foot-lnk">
+                            <label for="tab-1">Already Member?</a>
+                          </div>
+                        </div>
+                      </form>
+                      {% endif %}
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>Sitapur Road, Lucknow</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <div class="footer-social-icon">
+                                    <span>Follow us</span>
+                                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2020, All Right Reserved <a href="#">Fractal</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+    </html>

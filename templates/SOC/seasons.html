@@ -1,0 +1,179 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">        <link rel="stylesheet" href="icon-font.css">
+        <link rel="stylesheet" href="{% static "css/styles3.css" %}">
+    </head>
+    <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">
+                &nbsp;
+            </div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="SOC.html" class="navigation__link">Home</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">About SOC</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">About Fractal</a></li>
+                    <li class="navigation__item" id="#login"><a href="#popup" class="navigation__link">Login</a></li>
+                    <li class="navigation__item"><a href="#popup" class="navigation__link">Register</a></li>
+                </ul>
+            </nav>
+        <section class="section-tours" id="section-tours">
+
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="jello">
+                    SEASONS
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                   <div class="card">
+                       <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--1">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">The Summer Phase</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>3 month phase</li>
+                                    <li>4 people to register</li>
+                                    <li>choose mentor</li>
+                                    <li>choose project</li>
+                                    <li>submit project</li>
+                                </ul>
+                            </div>
+                       </div>
+                       <div class="card__side card__side--back card__side--back-1">
+                            <div class="card__cta">
+
+                                <a href="#popup" class="btn btn--white">Register Now</a>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--2">The Spring Phase</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>3 month phase</li>
+                                    <li>4 people to register</li>
+                                    <li>choose mentor</li>
+                                    <li>choose project</li>
+                                    <li>submit project</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+
+                                <a href="#popup" class="btn btn--white">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--3">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--3">The Winter Phase</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>3 month phase</li>
+                                    <li>4 people to register</li>
+                                    <li>choose mentor</li>
+                                    <li>choose project</li>
+                                    <li>submit project</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__cta">
+
+                                <a href="#popup" class="btn btn--white">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <div class="popup" id="popup">
+                <div class="popup__content">
+                    <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    </div>
+                     <div class="login-wrap">
+                       <div class="login-html">
+
+                          <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                          <div class="login-form">
+
+                            <div class="sign-up-htm">
+                              <div class="group">
+                                <label for="user" class="label">Username</label>
+                                <input id="user" type="text" class="input">
+                              </div>
+                              <div class="group">
+                                <label for="pass" class="label">Password</label>
+                                <input id="pass" type="password" class="input" data-type="password">
+                              </div>
+                              <div class="group">
+                                <label for="pass" class="label">Repeat Password</label>
+                                <input id="pass" type="password" class="input" data-type="password">
+                              </div>
+                              <div class="group">
+                                <label for="pass" class="label">Email Address</label>
+                                <input id="pass" type="text" class="input">
+                                <div class="group">
+                                    <label for="user" class="label">Branch</label>
+                                    <input id="user" type="text" class="input">
+                                  </div>
+                                  <div class="group">
+                                    <label for="user" class="label">Graduation Year</label>
+                                    <input id="user" type="number" class="input">
+                                  </div>
+                              </div>
+                              <div class="group">
+                                <input type="submit" class="button" value="Sign Up">
+                              </div>
+                              <div class="hr"></div>
+                              <div class="foot-lnk">
+                                <label for="tab-1">Already Member?</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+
+    </body>
+</html>
